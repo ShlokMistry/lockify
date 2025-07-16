@@ -1,0 +1,20 @@
+
+.addTable { 
+    border: 1px solid #1d6dbd;
+    background-color: lightcyan;
+    padding: 40px;
+    margin-top: 90px;
+    margin-left:39%;
+}
+.addLabelCell{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-weight: 1000;
+    color: #343a40;
+}
+.addSubmitButton{
+    margin-left: 55px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color:#1d6dbd;
+}
