@@ -1,0 +1,19 @@
+
+.profileTable { 
+    border: 1px solid #1d6dbd;
+    background-color:aliceblue;
+    padding: 40px;
+    margin-top: 90px;
+    margin-left:39%;
+}
+.profileLabelCell{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-weight: 1000;
+    color: blue;
+}
+.submitButtonCell{
+    margin-left: 55px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}

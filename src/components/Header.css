@@ -1,0 +1,9 @@
+header {
+    text-align: left;
+    padding: 10px 15px 15px 15px; 
+    height: auto;                
+    background-color: lightgray; /* Very light gray for a clean header background */
+    color: #2e3b49; 
+    font-size: 16px;
+    margin-top: 0;               
+  }

@@ -1,0 +1,16 @@
+.viewTable { 
+    border: 1px solid #1d6dbd; /* Professional blue border */
+    background-color: aliceblue; /* Light blue background for readability */
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+.viewName,
+.viewPass {
+    color: #343a40; /* Dark gray text for professional look */
+    font-size: 1.1em; /* Slightly larger font for readability */
+    padding: 5px 0;
+}

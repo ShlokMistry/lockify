@@ -1,0 +1,69 @@
+/* Container for all website cards - this replaces the role of .homeTable for layout */
+.websiteGridContainer {
+    display: flex;       /* Enables Flexbox layout */
+    flex-wrap: wrap;     /* Allows cards to wrap to the next line if space runs out */
+    gap: 20px;           /* Adds space (gutter) between website cards, both horizontally and vertically */
+    justify-content: center; /* Centers the cards in the container. Use 'flex-start' if you want them left-aligned */
+    padding: 20px;       /* Adds padding around the entire grid of cards */
+    margin-top: 20px;    /* Adds some space above the grid, similar to old homeTable margin */
+}
+
+/* Styles for each individual website card */
+.websiteCard {
+    /* flex-grow, flex-shrink, flex-basis: Allows cards to grow/shrink and defines a preferred width */
+    flex: 1 1 250px;     /* Each card will try to be 250px wide, but can grow/shrink */
+    max-width: 300px;    /* Prevents cards from becoming too wide on very large screens */
+
+    /* Inherited from your previous .homeTable's visual style if applicable, or adjusted */
+    border: 1px solid #1d6dbd; /* Match previous border */
+    background-color: aliceblue; /* Match previous background */
+
+    /* Ensure content is centered inside each card if desired */
+    text-align: center;
+
+    /* If .hcontent had specific padding/margin, ensure it works here */
+    padding: 15px; /* Inner padding for the card */
+    border-radius: 8px; /* Slightly rounded corners for the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+    /* For consistent height if content varies */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes the h3 and link to top/bottom */
+    min-height: 150px; /* Example: minimum height to make boxes consistent */
+}
+
+/* Styles for the hcontent div (inside websiteCard) */
+/* This class should already exist and define the text/link styles. */
+/* You might want to remove padding from here if .websiteCard now handles it. */
+.hcontent {
+    /* If this class had padding, you might want to remove or reduce it now that .websiteCard has padding */
+    /* padding: 0; */ /* Example: remove if not needed */
+    width: 100%; /* Ensure it takes full width within the card */
+    /* Add any other specific styles for the text and link within the box */
+}
+
+/* Existing .homeTable styles - no longer directly used for layout, can be removed or commented out */
+.homeTable {
+    /* You can comment out or remove this section if it's no longer being used */
+    /* display: none; */ /* Example: to hide it if you keep the class but don't use the table */
+    border: 1px solid #1d6dbd;
+    background-color: aliceblue;
+    padding: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* Your .viewDetailsLink should be adjusted if its position: relative was causing issues */
+.viewDetailsLink {
+    display: inline-block; /* Essential for applying margin/padding correctly */
+    margin-top: 15px; /* Add space above the link, better than relative positioning for layout */
+    /* remove: position: relative; top: 10px; if it breaks the layout */
+    /* Add or keep your existing text styles for the link here */
+}
+
+.faceBook {
+    margin-left: 8px;
+    font-size: large;
+    font-weight: 400;
+}
