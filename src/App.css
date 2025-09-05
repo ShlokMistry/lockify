@@ -1,40 +1,55 @@
+:root {
+  --primary-color: #34495e; /* A deep, professional blue */
+  --secondary-color: #555e6c; /* A slightly lighter blue-gray */
+  --accent-color: #3498db; /* A vibrant blue for links and highlights */
+  --background-color: #f4f6f9; /* A very light gray background */
+  --card-background: #ffffff; /* Pure white for cards */
+  --border-color: #e0e6ed; /* A subtle border color */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--secondary-color);
+}
+
 .project-title {
-    text-align: center;
-    font-size: 46px;
-    font-weight: 800;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #0056b3;
-    letter-spacing: 2px;
-    margin-top: 10px;
-    margin-bottom: 5px;      
-    text-shadow: 1px 1px 3px rgba(0, 86, 179, 0.2);
-    animation: fadeIn 1.5s ease-in-out;
+  text-align: center;
+  font-size: 46px;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;      
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-    
- .nav-links {
-    text-align: left;
-  }
-  
-  .nav-links a {
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #007bff;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-    
-  }
-  
+.nav-links {
+  text-align: left;
+}
+
+.nav-links a {
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}

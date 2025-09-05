@@ -1,20 +1,33 @@
-
 .addTable { 
-    border: 1px solid #1d6dbd;
-    background-color: lightcyan;
+    border: 1px solid var(--border-color); /* Consistent border */
+    background-color: var(--card-background); /* Consistent background color */
     padding: 40px;
     margin-top: 90px;
-    margin-left:39%;
+    margin-left: 39%;
+    box-shadow: var(--box-shadow); /* Consistent shadow */
+    border-radius: 12px; /* Consistent rounded corners */
 }
-.addLabelCell{
+
+.addLabelCell {
     margin-left: 30px;
     margin-bottom: 10px;
     font-weight: 1000;
-    color: #343a40;
+    color: var(--primary-color); /* Deep blue-gray text */
 }
-.addSubmitButton{
+
+.addSubmitButton {
     margin-left: 55px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color:#1d6dbd;
+    color: var(--accent-color); /* Vibrant blue from the theme */
+    border: 1px solid var(--accent-color); /* A subtle border that matches the accent color */
+    background-color: transparent; /* Clear background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.addSubmitButton:hover {
+    background-color: var(--accent-color); /* Fill the button on hover */
+    color: #ffffff; /* White text on hover for contrast */
 }

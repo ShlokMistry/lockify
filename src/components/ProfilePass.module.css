@@ -1,18 +1,21 @@
-
 .profileTable { 
-    border: 1px solid #1d6dbd;
-    background-color:aliceblue;
+    border: 1px solid var(--border-color); /* Matches the subtle border from other components */
+    background-color: var(--card-background); /* White or dark card background based on theme */
     padding: 40px;
     margin-top: 90px;
-    margin-left:39%;
+    margin-left: 39%;
+    box-shadow: var(--box-shadow); /* Consistent shadow for depth */
+    border-radius: 12px; /* Consistent rounded corners */
 }
-.profileLabelCell{
+
+.profileLabelCell {
     margin-left: 30px;
     margin-bottom: 10px;
     font-weight: 1000;
-    color: blue;
+    color: var(--primary-color); /* Professional deep blue-gray text */
 }
-.submitButtonCell{
+
+.submitButtonCell {
     margin-left: 55px;
     margin-top: 10px;
     margin-bottom: 0px;
